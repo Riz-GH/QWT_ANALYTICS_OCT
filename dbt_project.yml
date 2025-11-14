@@ -59,7 +59,7 @@ models:
     - "update {{ env_var('DBT_AUDITSCHEMA_NAME', 'AUDITING_DEV') }}.qwt_models_audit set endtime = current_timestamp , duration = datediff('second', starttime, current_timestamp()) where modelname = '{{this}}';" 
 
   dq_tools:
-    schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'AUDITING_DEV')}}"                    #AUDITING_DEV
+    schema: "{{env_var('DBT_AUDITSCHEMA_NAME', 'AUDITING_DEV')}}"                    #AUDITING_DEV
 #models:
  # +pre-hook:
   #  - "use database qwt_dev;"

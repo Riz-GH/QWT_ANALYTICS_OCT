@@ -41,7 +41,7 @@ vars:
   dq_tools_enable_store_test_results: True
 
 seeds:
-  schema:  "{{env_var('DBT_LKPSCHEMA_NAME', 'lkp_dev')}}"                           #lkp_dev
+  schema:  "{{env_var('DBT_LKPSCHEMA_NAME', 'lookup_prod')}}"                           #lkp_dev
 
 on-run-end:
   - '{{ dq_tools.store_test_results(results) }}'  

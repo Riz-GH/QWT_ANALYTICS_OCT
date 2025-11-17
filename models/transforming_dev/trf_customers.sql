@@ -1,5 +1,5 @@
 {# {{ config(materialized = 'table', schema = 'transforming_dev') }} #}
-{{ config(materialized = 'table', schema = env_var('DBT_STGSCHEMA_NAME', 'TRANSFORMING_DEV')) }}
+{{ config(materialized = 'table', schema = env_var('DBT_TRFSCHEMA_NAME', 'TRANSFORMING_DEV')) }}
  
 select
 c.customerid,

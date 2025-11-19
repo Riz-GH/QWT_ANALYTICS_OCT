@@ -2,15 +2,15 @@ seeds:
   - name: lkp_divisions
     config:
       #schema: lookup_prod
-      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lkp_dev')}}"         #lookup_dev  
+      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lookup_dev')}}"         #lookup_dev  
 
 
   - name: lkp_categories
     config:
       #schema: lookup_prod
-      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lkp_dev')}}"         #lookup_dev
+      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lookup_dev')}}"         #lookup_dev
 
   - name: lkp_shippers
     config:
       #schema: lookup_prod
-      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lkp_dev')}}"         #lookup_dev
+      schema: "{{env_var('DBT_LKPSCHEMA_NAME', 'lookup_dev')}}"         #lookup_dev
